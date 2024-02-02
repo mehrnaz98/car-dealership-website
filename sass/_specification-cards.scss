@@ -53,13 +53,13 @@
     background-position: center;
     clip-path: polygon(100% 0, 100% 90%, 63% 90%, 34% 100%, 0 100%, 0 0);
     &--1 {
-      background-image: white, url("../../starter/img/Purple_SIM.png");
+      background-image: url("../img/car1.png");
     }
     &--2 {
-      background-image: white, url("../../starter/img/blue_SIM.png");
+      background-image: url("../img/car4.png");
     }
     &--3 {
-      background-image: white, url("../../starter/img/pink_SIM.png");
+      background-image: url("../img/car2.png");
     }
   }
   &__title {

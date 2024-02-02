@@ -365,11 +365,11 @@ body {
     background-position: center;
     clip-path: polygon(100% 0, 100% 90%, 63% 90%, 34% 100%, 0 100%, 0 0); }
     .plan-card__picture--1 {
-      background-image: white, url("../../starter/img/Purple_SIM.png"); }
+      background-image: url("../img/car1.png"); }
     .plan-card__picture--2 {
-      background-image: white, url("../../starter/img/blue_SIM.png"); }
+      background-image: url("../img/car4.png"); }
     .plan-card__picture--3 {
-      background-image: white, url("../../starter/img/pink_SIM.png"); }
+      background-image: url("../img/car2.png"); }
   .plan-card__title {
     background-color: rgba(255, 255, 255, 0.7);
     color: black;
