@@ -1,0 +1,120 @@
+@mixin clearfix {
+  .row {
+    &::after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+  }
+}
+/* media queries */
+
+/*
+    breakpoints for devices
+
+    0 - 600px       ---->   Mobile
+    600px - 900px   ---->   Tablets
+    900px - 1200px  ---->   Desktop
+    1200px +        ---->   Bigger screens + infinite
+
+*/
+
+// 16px = 1em
+
+@mixin respond-to($size) {
+  @if $size == small-phone {
+    @media only screen and (max-width: 30em) {
+      @content;
+    }
+  }
+  @if $size == phone {
+    @media only screen and (max-width: 37.55em) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  } @else if $size == tablet-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  } @else if $size == bigger-screens {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
+
+/*
+--color-primary: #e2e2e2;
+--color-black: #000;
+--color-white: #fff;
+
+*/
+
+:root {
+  --color-primary: #e2e2e2;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-red: #ff2020;
+}
+
+// utilities
+
+.u-border-top {
+  border-top: 1px solid var(--color-white);
+}
+
+//GRID
+
+$grid-width: 114rem;
+$vertical-gutter-small: 4rem;
+$vertical-gutter: 8rem;
+$horizontal-gutter: 6rem;
+
+// global setting
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1rem=10px 10px/16=62.5
+
+  @include respond-to(tablet) {
+    font-size: 56.25%;
+  }
+
+  @include respond-to(phone) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  line-height: 1.6rem;
+  padding: 0 2rem;
+  color: var(--color-primary);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/img/Photos-Earth-From-Space.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}

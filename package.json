@@ -1,0 +1,14 @@
+{
+  "name": "car-dealership-website",
+  "version": "1.0.0",
+  "description": "Landing page for a car dealership website",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Mehrnaz Eftekhari",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
