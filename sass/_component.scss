@@ -52,23 +52,27 @@
 .left-side {
   margin-right: -11rem;
 
-  &__celestialBodies {
+  &__twoCars {
     display: flex;
     justify-content: space-evenly;
-    margin-right: 14rem;
+    margin-right: 35rem;
+    padding-top: 3rem;
 
     img {
-      height: 90px;
-      width: 90px;
+      width: 162px;
+      &--1 {
+        width: 178px;
+        height: 91px;
+      }
     }
   }
 
   &__about {
     &--paragraph {
       line-height: 2;
-      width: 80%;
+      width: 60%;
       font-size: 1.4rem;
-      margin-top: 16rem;
+      margin-top: 6rem;
       margin-bottom: 1rem;
       text-align: justify;
     }
@@ -86,8 +90,8 @@
       border: none;
       opacity: 0.8;
       cursor: pointer;
-      color: var(--color-black);
-      background: var(--color-white);
+      color: var(--color-white);
+      background: orange;
     }
   }
 
@@ -128,68 +132,6 @@
           width: 79%;
         }
       }
-    }
-  }
-}
-
-.center {
-  padding: 2rem 0rem;
-
-  &__publishers {
-    display: flex;
-    align-items: center;
-    padding: 2rem 0;
-    padding-right: 10px;
-    padding-left: 10px;
-
-    &--name {
-      font-size: 1.1rem;
-      font-weight: 800;
-      text-transform: capitalize;
-      margin-right: 2rem;
-      margin-top: 3rem;
-      margin-left: 10px;
-    }
-
-    &--picture {
-      position: relative;
-
-      img {
-        height: 45px;
-        width: 45px;
-        border-radius: 100px;
-        box-shadow: 0 0 0 3px var(--color-white);
-      }
-
-      &--1 {
-        position: absolute;
-        left: 21rem;
-        bottom: 0rem;
-      }
-
-      &--2 {
-        position: absolute;
-        left: 24rem;
-        bottom: 0rem;
-      }
-
-      &--3 {
-        position: absolute;
-        left: 27rem;
-        bottom: 0rem;
-      }
-    }
-  }
-  @include respond-to(tablet-land) {
-    &__publishers {
-      display: block;
-    }
-  }
-
-  @include respond-to(tablet) {
-    &__publishers {
-      display: flex;
-      padding: 2rem 0;
     }
   }
 }
