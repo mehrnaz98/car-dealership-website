@@ -5,6 +5,7 @@
   position: relative;
 
   &__view {
+    clip-path: polygon(100% 0, 100% 4%, 71% 100%, 0 100%, 0 0);
     transition: all 0.8s ease-in-out;
     font-size: 2rem;
     position: absolute;
@@ -46,11 +47,12 @@
   /* front style */
 
   &__picture {
-    height: 23rem;
+    height: 25rem;
+    width: 62rem;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    clip-path: polygon(100% 0, 100% 90%, 63% 90%, 34% 100%, 0 100%, 0 0);
+
     &--1 {
       background-image: url("../img/car1.png");
     }
@@ -61,25 +63,37 @@
       background-image: url("../img/car2.png");
     }
   }
-  &__title {
-    background-color: rgba(white, 0.7);
-    color: black;
+
+  &__detail {
+    color: rgb(59, 56, 56);
     position: absolute;
-    top: 10rem;
-    right: 4rem;
     font-size: 1.5rem;
-    font-weight: 300;
-    text-transform: uppercase;
     padding: 0.6rem;
-    transform: rotate3d(1, 0, 6, -54deg);
-  }
-  &__details {
-    padding-top: 1rem;
-    padding-left: 0;
-    list-style: none;
-    font-size: 1.5rem;
-    line-height: 2.9rem;
-    font-weight: 500;
+    font-weight: 490;
+
+    &--1 {
+      position: relative;
+      top: -25rem;
+    }
+    &--2 {
+      position: relative;
+      top: -26.7rem;
+      left: 24rem;
+    }
+    &--3 {
+      position: relative;
+      top: -5.9rem;
+    }
+    &--4 {
+      position: relative;
+      top: -7.5rem;
+      right: -8rem;
+    }
+    &--5 {
+      position: relative;
+      top: -9.1rem;
+      right: -20rem;
+    }
   }
 
   /* back styles */
