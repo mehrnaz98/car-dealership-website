@@ -6,7 +6,6 @@
 
   &__view {
     transition: all 0.8s ease-in-out;
-    height: 50rem;
     font-size: 2rem;
     position: absolute;
     top: 0;
@@ -14,7 +13,7 @@
     width: 100%;
     backface-visibility: hidden;
     border-radius: 7px;
-    // box-shadow: 0px 1.5px 3px 2px rgba(black, 0.32);
+    box-shadow: 0px 1.5px 3px 2px rgba(black, 0.32);
     overflow: hidden;
 
     &--front {
