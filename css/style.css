@@ -15,10 +15,12 @@
 
 */
 :root {
-  --color-primary: #e2e2e2;
+  --color-primary: #e8e8e8;
   --color-black: #000;
   --color-white: #fff;
-  --color-red: #ff2020; }
+  --color-red: #f05454;
+  --color-blue: #30475e;
+  --color-dark-blue: #222831; }
 
 .u-border-top {
   border-top: 1px solid var(--color-white); }
@@ -117,7 +119,7 @@ body {
       opacity: 0.8;
       cursor: pointer;
       color: var(--color-white);
-      background: orange; }
+      background: var(--color-red); }
   @media only screen and (max-width: 56.25em) {
     .left-side__celestialBodies {
       padding: 2rem 0 4rem 0; }
