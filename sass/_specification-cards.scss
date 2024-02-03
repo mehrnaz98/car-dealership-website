@@ -5,7 +5,7 @@
   position: relative;
 
   &__view {
-    clip-path: polygon(100% 0, 100% 4%, 71% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 4%, 62% 100%, 0 100%, 0 0);
     transition: all 0.8s ease-in-out;
     font-size: 2rem;
     position: absolute;
@@ -19,6 +19,7 @@
 
     &--front {
       background-color: white;
+      width: 238px;
     }
 
     &--back {
@@ -47,8 +48,8 @@
   /* front style */
 
   &__picture {
-    height: 25rem;
-    width: 62rem;
+    height: 211px;
+    width: 43rem;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;

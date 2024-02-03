@@ -13,11 +13,12 @@
   @include clearfix;
 
   [class^="col-"] {
-    float: left;
+    float: inline-end;
     &:not(:last-child) {
       margin-right: $horizontal-gutter;
+      margin-right: 0rem;
       @include respond-to(tablet) {
-        margin-right: 0;
+        margin-right: 0rem;
         margin-bottom: $vertical-gutter-small;
       }
     }
@@ -39,6 +40,7 @@
 
   .col-1-of-3 {
     width: calc((100% - 2 * #{$horizontal-gutter}) / 3);
+    margin-right: 0rem;
   }
 
   .col-2-of-3 {
