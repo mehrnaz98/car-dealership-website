@@ -46,17 +46,11 @@
   }
 }
 
-/*
---color-primary: #e2e2e2;
---color-black: #000;
---color-white: #fff;
-
-*/
-
 :root {
   --color-primary: #e8e8e8;
   --color-black: #000;
   --color-white: #fff;
+  --color-gray: rgb(105, 104, 104);
   --color-red: #f05454;
   --color-blue: #30475e;
   --color-dark-blue: #222831;
@@ -65,10 +59,10 @@
 // utilities
 
 .u-border-top {
-  border-top: 1px solid var(--color-white);
+  border-top: 1px solid var(--color-black);
 }
 .u-border-left {
-  border-left: 1px solid var(--color-white);
+  border-left: 1px solid var(--color-black);
 }
 
 //GRID
@@ -110,13 +104,14 @@ body {
   font-weight: 400;
   line-height: 1.6rem;
   padding: 0 2rem;
-  color: var(--color-primary);
-  background-image: linear-gradient(
+  color: var(--color-black);
+  background-color: var(--color-white);
+  /*background-image: linear-gradient(
       to bottom,
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url("/img/Photos-Earth-From-Space.jpg");
+    url("/img/Photos-Earth-From-Space.jpg");*/
 
   background-position: center;
   background-repeat: no-repeat;

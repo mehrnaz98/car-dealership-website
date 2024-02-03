@@ -8,25 +8,20 @@
     1200px +        ---->   Bigger screens + infinite
 
 */
-/*
---color-primary: #e2e2e2;
---color-black: #000;
---color-white: #fff;
-
-*/
 :root {
   --color-primary: #e8e8e8;
   --color-black: #000;
   --color-white: #fff;
+  --color-gray: rgb(105, 104, 104);
   --color-red: #f05454;
   --color-blue: #30475e;
   --color-dark-blue: #222831; }
 
 .u-border-top {
-  border-top: 1px solid var(--color-white); }
+  border-top: 1px solid var(--color-black); }
 
 .u-border-left {
-  border-left: 1px solid var(--color-white); }
+  border-left: 1px solid var(--color-black); }
 
 * {
   padding: 0;
@@ -52,8 +47,14 @@ body {
   font-weight: 400;
   line-height: 1.6rem;
   padding: 0 2rem;
-  color: var(--color-primary);
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/img/Photos-Earth-From-Space.jpg");
+  color: var(--color-black);
+  background-color: var(--color-white);
+  /*background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url("/img/Photos-Earth-From-Space.jpg");*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -62,7 +63,7 @@ body {
 .header {
   text-transform: uppercase; }
   .header__title {
-    font-size: 2rem; }
+    font-size: 2.9rem; }
   .header__profile {
     display: flex;
     align-items: center; }
@@ -195,7 +196,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 2rem 0;
-  font-size: 2rem; }
+  font-size: 2.5rem;
+  color: var(--color-gray); }
 
 .container {
   display: flex;
@@ -226,6 +228,7 @@ body {
   -moz-perspective: 150rem;
   height: 29rem;
   position: relative;
+  margin-top: 2rem;
   /* front style */
   /* back styles */ }
   .plan-card__view {
@@ -238,7 +241,7 @@ body {
     width: 100%;
     backface-visibility: hidden;
     border-radius: 7px;
-    box-shadow: 0px 1.5px 3px 2px rgba(0, 0, 0, 0.32);
+    box-shadow: inset 0 0 12px -6px rgba(0, 0, 0, 0.5);
     overflow: hidden; }
     .plan-card__view--front {
       background-color: white;
@@ -247,11 +250,11 @@ body {
       transform: rotateY(180deg);
       overflow: hidden; }
       .plan-card__view--back-1 {
-        background-image: white; }
+        background-color: var(--color-black); }
       .plan-card__view--back-2 {
-        background-image: white; }
+        background-color: var(--color-black); }
       .plan-card__view--back-3 {
-        background-image: white; }
+        background-color: var(--color-black); }
   .plan-card:hover .plan-card__view--front {
     transform: rotateY(180deg); }
   .plan-card:hover .plan-card__view--back {
