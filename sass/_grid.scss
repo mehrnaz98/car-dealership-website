@@ -15,7 +15,6 @@
   [class^="col-"] {
     float: inline-end;
     &:not(:last-child) {
-      margin-right: $horizontal-gutter;
       margin-right: 0rem;
       @include respond-to(tablet) {
         margin-right: 0rem;
