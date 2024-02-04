@@ -47,7 +47,7 @@ body {
   font-weight: 400;
   line-height: 1.6rem;
   padding: 0 2rem;
-  color: var(--color-black);
+  color: var(--color-blue);
   background-color: var(--color-white);
   /*background-image: linear-gradient(
       to bottom,
@@ -66,7 +66,8 @@ body {
     font-size: 2.9rem; }
   .header__profile {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    font-size: 2rem; }
     .header__profile :not(:last-child) {
       margin-right: 1.5rem; }
     .header__profile--img {
@@ -105,11 +106,11 @@ body {
       width: 286px; }
   .left-side__about--paragraph {
     line-height: 2;
-    width: 85%;
+    width: 87%;
     font-size: 2.3rem;
     margin-top: 6rem;
     margin-bottom: 1rem;
-    margin-top: 10rem;
+    margin-top: 8rem;
     margin-left: 2rem; }
   .left-side__btn {
     margin-top: 4rem;
@@ -138,7 +139,7 @@ body {
       .left-side__about--paragraph {
         width: 86%;
         padding-bottom: 2rem;
-        margin-top: 8rem; }
+        margin-top: 10rem; }
     .left-side__btn {
       margin-top: 2rem; }
       .left-side__btn a {
@@ -317,13 +318,16 @@ body {
       top: -9.3rem;
       right: -17rem; }
   .plan-card--deals {
-    font-size: 1.8rem;
-    color: black;
+    font-size: 2.5rem;
+    text-align: left;
+    color: var(--color-white);
+    text-transform: uppercase;
     padding: 3rem;
     line-height: 3.3rem;
     font-weight: 500;
     padding-right: 50px;
-    padding-left: 50px; }
+    padding-left: 50px;
+    padding-bottom: 10rem; }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     .plan-card {
       height: auto; }
@@ -398,9 +402,10 @@ body {
 .btn-flip {
   width: 160px;
   height: 48px;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  perspective: 150rem; }
+  perspective: 150rem;
+  margin-top: -4px;
+  margin-bottom: 5rem;
+  margin-right: 13rem; }
   .btn-flip__link {
     font-weight: 600;
     text-transform: uppercase;
@@ -420,14 +425,17 @@ body {
     line-height: 48px;
     position: absolute;
     text-align: center;
-    letter-spacing: 0.4rem; }
+    letter-spacing: 0.4rem;
+    margin-top: -4px;
+    margin-bottom: 5rem;
+    margin-right: 13rem; }
   .btn-flip__front {
     background-color: var(--color-red);
     color: var(--color-white);
     transform: rotateY(0) translateZ(24px); }
   .btn-flip__back {
     background-color: rgba(240, 84, 84, 0);
-    color: rgba(128, 128, 128, 0);
+    color: rgba(71, 108, 255, 0);
     transform: rotateX(90deg) translateZ(24px);
     overflow: hidden; }
   .btn-flip__back:after {
@@ -449,7 +457,7 @@ body {
   .btn-flip__link:hover .btn-flip__back {
     color: var(--color-white);
     transition: all 0.4s linear;
-    background-color: var(--color-primary); }
+    background-color: var(--color-blue); }
   .btn-flip__link:hover .btn-flip__back:after {
     transform: rotate(6deg) translate(100px, -18px); }
   @media only screen and (max-width: 56.25em) {
@@ -459,7 +467,9 @@ body {
 .planCardButton {
   display: block;
   margin: 0 auto;
-  margin-top: 50px; }
+  margin-top: -4px;
+  margin-bottom: 5rem;
+  margin-right: 13rem; }
   @media only screen and (max-width: 56.25em) {
     .planCardButton {
       margin-top: 15px; } }

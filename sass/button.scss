@@ -1,9 +1,10 @@
 .btn-flip {
   width: 160px;
   height: 48px;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
   perspective: 150rem;
+  margin-top: -4px;
+  margin-bottom: 5rem;
+  margin-right: 13rem;
 
   &__link {
     font-weight: 600;
@@ -28,6 +29,9 @@
     position: absolute;
     text-align: center;
     letter-spacing: 0.4rem;
+    margin-top: -4px;
+    margin-bottom: 5rem;
+    margin-right: 13rem;
   }
 
   &__front {
@@ -37,7 +41,7 @@
   }
   &__back {
     background-color: rgba(#f05454, 0);
-    color: rgba(gray, 0);
+    color: rgba(rgb(71, 108, 255), 0);
     transform: rotateX(90deg) translateZ(24px);
     overflow: hidden;
   }
@@ -65,7 +69,7 @@
   &__link:hover &__back {
     color: var(--color-white);
     transition: all 0.4s linear;
-    background-color: var(--color-primary);
+    background-color: var(--color-blue);
   }
   &__link:hover &__back:after {
     transform: rotate(6deg) translate(100px, -18px);
@@ -75,11 +79,12 @@
     height: 72px;
   }
 }
-
 .planCardButton {
   display: block;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: -4px;
+  margin-bottom: 5rem;
+  margin-right: 13rem;
 
   @include respond-to(tablet) {
     margin-top: 15px;
