@@ -76,8 +76,6 @@ body {
       border-radius: 100%;
       object-fit: cover; }
   @media only screen and (max-width: 56.25em) {
-    .header__title {
-      display: none; }
     .header__profile :not(:last-child) {
       margin-right: 1.5rem; }
     .header--img {
@@ -132,15 +130,12 @@ body {
   @media only screen and (max-width: 56.25em) {
     .left-side__twoCars {
       padding: 2rem 0 4rem 0; }
-      .left-side__twoCars img {
-        height: 70px;
-        width: 70px; }
     .left-side__about {
       transform: translateY(0); }
       .left-side__about--paragraph {
-        width: 86%;
+        width: 97%;
         padding-bottom: 2rem;
-        margin-top: 10rem; }
+        margin-top: 3rem; }
     .left-side__btn {
       margin-top: 2rem; }
       .left-side__btn a {
@@ -208,7 +203,7 @@ body {
         .article__content__title--2 {
           padding-top: 0px; }
       .article__content__list {
-        display: block; }
+        display: flex; }
         .article__content__list--1 {
           padding-right: 3rem; } }
 
@@ -227,6 +222,11 @@ body {
 
 .item {
   flex: 1 1 calc(50% - 162px); }
+  @media only screen and (max-width: 56.25em) {
+    .item {
+      display: block;
+      margin: 0 auto;
+      flex: auto; } }
 
 .item-0,
 .first-item {

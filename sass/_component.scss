@@ -21,10 +21,6 @@
     }
   }
   @include respond-to(tablet) {
-    &__title {
-      display: none;
-    }
-
     &__profile {
       :not(:last-child) {
         margin-right: 1.5rem;
@@ -107,17 +103,15 @@
       padding: 2rem 0 4rem 0;
 
       img {
-        height: 70px;
-        width: 70px;
       }
     }
 
     &__about {
       transform: translateY(0);
       &--paragraph {
-        width: 86%;
+        width: 97%;
         padding-bottom: 2rem;
-        margin-top: 10rem;
+        margin-top: 3rem;
       }
     }
 
@@ -225,7 +219,7 @@
     }
 
     &__list {
-      display: block;
+      display: flex;
 
       &--1 {
         padding-right: 3rem;
