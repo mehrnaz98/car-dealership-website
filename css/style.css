@@ -245,7 +245,7 @@ body {
     overflow: hidden; }
     .plan-card__view--front {
       background-color: white;
-      width: 238px; }
+      width: 352px; }
     .plan-card__view--back {
       transform: rotateY(180deg);
       overflow: hidden; }
@@ -260,8 +260,8 @@ body {
   .plan-card:hover .plan-card__view--back {
     transform: rotateY(0); }
   .plan-card__picture {
-    height: 211px;
-    width: 43rem;
+    height: 293px;
+    width: 61rem;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; }
@@ -343,9 +343,9 @@ body {
     content: "";
     display: table; }
   .row [class^="col-"] {
-    float: inline-end; }
+    float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 0rem; }
+      margin-right: 6rem; }
       @media only screen and (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0rem;

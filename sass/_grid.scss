@@ -13,9 +13,10 @@
   @include clearfix;
 
   [class^="col-"] {
-    float: inline-end;
+    float: left;
+
     &:not(:last-child) {
-      margin-right: 0rem;
+      margin-right: 6rem;
       @include respond-to(tablet) {
         margin-right: 0rem;
         margin-bottom: $vertical-gutter-small;
