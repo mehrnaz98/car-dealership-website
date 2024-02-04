@@ -92,22 +92,24 @@ body {
         width: 35px; } }
 
 .left-side {
-  margin-right: -11rem; }
+  margin-right: 3rem;
+  margin-left: 1rem; }
   .left-side__twoCars {
     display: flex;
     justify-content: space-evenly; }
     .left-side__twoCars img {
-      width: 162px; }
+      width: 286px; }
       .left-side__twoCars img--1 {
-        width: 178px;
-        height: 91px; }
+        height: 152px;
+        margin-top: 4rem; }
   .left-side__about--paragraph {
     line-height: 2;
-    width: 60%;
+    width: 82%;
     font-size: 1.4rem;
     margin-top: 6rem;
     margin-bottom: 1rem;
-    text-align: justify; }
+    text-align: justify;
+    margin-left: 2rem; }
   .left-side__btn {
     margin-top: 4rem; }
     .left-side__btn a {
@@ -204,7 +206,7 @@ body {
   flex-wrap: wrap; }
 
 .item {
-  flex: 1 1 calc(50% - 100px); }
+  flex: 1 1 calc(50% - 162px); }
 
 .item-0,
 .first-item {
@@ -345,7 +347,8 @@ body {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 6rem; }
+      margin-right: 6rem;
+      margin-bottom: 8rem; }
       @media only screen and (max-width: 56.25em) {
         .row [class^="col-"]:not(:last-child) {
           margin-right: 0rem;

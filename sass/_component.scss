@@ -50,8 +50,8 @@
 }
 
 .left-side {
-  margin-right: -11rem;
-
+  margin-right: 3rem;
+  margin-left: 1rem;
   &__twoCars {
     display: flex;
     justify-content: space-evenly;
@@ -59,10 +59,10 @@
     //padding-top: 3rem;
 
     img {
-      width: 162px;
+      width: 286px;
       &--1 {
-        width: 178px;
-        height: 91px;
+        height: 152px;
+        margin-top: 4rem;
       }
     }
   }
@@ -70,11 +70,12 @@
   &__about {
     &--paragraph {
       line-height: 2;
-      width: 60%;
+      width: 82%;
       font-size: 1.4rem;
       margin-top: 6rem;
       margin-bottom: 1rem;
       text-align: justify;
+      margin-left: 2rem;
     }
   }
 

@@ -17,6 +17,7 @@
 
     &:not(:last-child) {
       margin-right: 6rem;
+      margin-bottom: 8rem;
       @include respond-to(tablet) {
         margin-right: 0rem;
         margin-bottom: $vertical-gutter-small;
