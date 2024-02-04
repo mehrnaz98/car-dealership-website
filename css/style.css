@@ -243,7 +243,7 @@ body {
   display: flex;
   flex: 1;
 }*/
-.plan-card {
+.specificationcards {
   perspective: 150rem;
   -moz-perspective: 150rem;
   height: 29rem;
@@ -251,7 +251,7 @@ body {
   margin-top: 2rem;
   /* front style */
   /* back styles */ }
-  .plan-card__view {
+  .specificationcards__view {
     clip-path: polygon(100% 0, 100% 4%, 62% 100%, 0 100%, 0 0);
     transition: all 0.8s ease-in-out;
     font-size: 2rem;
@@ -263,61 +263,65 @@ body {
     border-radius: 7px;
     box-shadow: inset 0 0 12px -6px rgba(0, 0, 0, 0.5);
     overflow: hidden; }
-    .plan-card__view--front {
+    .specificationcards__view--front {
       background-color: white;
       width: 352px; }
-    .plan-card__view--back {
+    .specificationcards__view--back {
       transform: rotateY(180deg);
       overflow: hidden; }
-      .plan-card__view--back-1 {
+      .specificationcards__view--back-1 {
         background-color: var(--color-black); }
-      .plan-card__view--back-2 {
+      .specificationcards__view--back-2 {
         background-color: var(--color-black); }
-      .plan-card__view--back-3 {
+      .specificationcards__view--back-3 {
         background-color: var(--color-black); }
-  .plan-card:hover .plan-card__view--front {
+  .specificationcards:hover .specificationcards__view--front {
     transform: rotateY(180deg); }
-  .plan-card:hover .plan-card__view--back {
+  .specificationcards:hover .specificationcards__view--back {
     transform: rotateY(0); }
-  .plan-card__picture {
+  .specificationcards__picture {
     height: 293px;
     width: 61rem;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center; }
-    .plan-card__picture--1 {
+    .specificationcards__picture--1 {
       background-image: url("../img/car1.png"); }
-    .plan-card__picture--2 {
+    .specificationcards__picture--2 {
       background-image: url("../img/car4.png"); }
-    .plan-card__picture--3 {
+    .specificationcards__picture--3 {
       background-image: url("../img/car2.png"); }
-  .plan-card__detail {
+  .specificationcards__detail {
     color: #3b3838;
     position: absolute;
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding: 0.6rem;
     font-weight: 490; }
-    .plan-card__detail--1 {
+    .specificationcards__detail--1 {
       position: relative;
       top: -28.9rem;
       right: -0.5rem; }
-    .plan-card__detail--2 {
+    .specificationcards__detail--2 {
       position: relative;
       top: -30.5rem;
       left: 23rem; }
-    .plan-card__detail--3 {
+    .specificationcards__detail--3 {
       position: relative;
-      top: -6rem;
+      top: -6.3rem;
       left: 0.5rem; }
-    .plan-card__detail--4 {
+      .specificationcards__detail--3 span {
+        font-size: 1.5rem; }
+    .specificationcards__detail--4 {
       position: relative;
-      top: -7.7rem;
+      top: -8.1rem;
       right: -8rem; }
-    .plan-card__detail--5 {
+      .specificationcards__detail--4 span {
+        font-size: 1.5rem; }
+    .specificationcards__detail--5 {
       position: relative;
-      top: -9.3rem;
+      top: -10rem;
       right: -17rem; }
-  .plan-card--deals {
+  .specificationcards--deals {
     font-size: 2.5rem;
     text-align: left;
     color: var(--color-white);
@@ -329,24 +333,24 @@ body {
     padding-left: 50px;
     padding-bottom: 10rem; }
   @media only screen and (max-width: 56.25em), only screen and (hover: none) {
-    .plan-card {
+    .specificationcards {
       height: auto; }
-      .plan-card__view {
+      .specificationcards__view {
         height: auto;
         font-size: 2rem;
         position: relative;
         width: 100%; }
-        .plan-card__view--back {
+        .specificationcards__view--back {
           transform: rotateY(0);
           clip-path: polygon(33% 8%, 65% 0, 100% 0, 100% 100%, 0 100%, 0 8%);
           margin-top: -3rem;
           border-radius: 3px;
           box-shadow: 0px 1.5px 3px 2px rgba(0, 0, 0, 0.92); }
-      .plan-card:hover .plan-card__view--front {
+      .specificationcards:hover .specificationcards__view--front {
         transform: rotateY(0); }
-      .plan-card__details {
+      .specificationcards__details {
         padding-bottom: 5rem; }
-      .plan-card--deals {
+      .specificationcards--deals {
         font-size: 1.6rem;
         padding: 2rem;
         position: relative;
@@ -464,14 +468,14 @@ body {
     .btn-flip {
       height: 72px; } }
 
-.planCardButton {
+.specificationcardsButton {
   display: block;
   margin: 0 auto;
   margin-top: -4px;
   margin-bottom: 5rem;
   margin-right: 13rem; }
   @media only screen and (max-width: 56.25em) {
-    .planCardButton {
+    .specificationcardsButton {
       margin-top: 15px; } }
 
 @keyframes fadeInLeft {
