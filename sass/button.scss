@@ -1,0 +1,87 @@
+.btn-flip {
+  width: 160px;
+  height: 48px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  perspective: 150rem;
+
+  &__link {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0%;
+    transform-style: preserve-3d;
+    transform: translateZ(-25px);
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+
+  &__front,
+  &__back {
+    width: 160px;
+    height: 48px;
+    line-height: 48px;
+    position: absolute;
+    text-align: center;
+    letter-spacing: 0.4rem;
+  }
+
+  &__front {
+    background-color: var(--color-red);
+    color: var(--color-white);
+    transform: rotateY(0) translateZ(24px);
+  }
+  &__back {
+    background-color: rgba(#f05454, 0);
+    color: rgba(gray, 0);
+    transform: rotateX(90deg) translateZ(24px);
+    overflow: hidden;
+  }
+
+  &__back:after {
+    content: "";
+    position: absolute;
+    top: -32%;
+    left: -10%;
+    width: 120%;
+    height: 50%;
+    background-color: rgba(#f05454, 0);
+    transform: rotate(8deg);
+    transform: all 0.5s ease;
+    transition-delay: 0.15s;
+  }
+
+  &__link:hover {
+    transform: translateZ(-24px) rotateX(-90deg);
+  }
+  &__link:hover &__front {
+    background-color: var(--color-black);
+    transition: all 0.8s ease;
+  }
+  &__link:hover &__back {
+    color: var(--color-white);
+    transition: all 0.4s linear;
+    background-color: var(--color-primary);
+  }
+  &__link:hover &__back:after {
+    transform: rotate(6deg) translate(100px, -18px);
+  }
+
+  @include respond-to(tablet) {
+    height: 72px;
+  }
+}
+
+.planCardButton {
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+
+  @include respond-to(tablet) {
+    margin-top: 15px;
+  }
+}

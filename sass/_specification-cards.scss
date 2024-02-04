@@ -69,32 +69,35 @@
   &__detail {
     color: rgb(59, 56, 56);
     position: absolute;
-    font-size: 1.5rem;
+    //font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 0.6rem;
     font-weight: 490;
 
     &--1 {
       position: relative;
-      top: -25rem;
+      top: -28.9rem;
+      right: -0.5rem;
     }
     &--2 {
       position: relative;
-      top: -26.7rem;
-      left: 24rem;
+      top: -30.5rem;
+      left: 23rem;
     }
     &--3 {
       position: relative;
-      top: -5.9rem;
+      top: -6rem;
+      left: 0.5rem;
     }
     &--4 {
       position: relative;
-      top: -7.5rem;
+      top: -7.7rem;
       right: -8rem;
     }
     &--5 {
       position: relative;
-      top: -9.1rem;
-      right: -20rem;
+      top: -9.3rem;
+      right: -17rem;
     }
   }
 
