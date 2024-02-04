@@ -42,6 +42,9 @@
   .col-1-of-3 {
     width: calc((100% - 2 * #{$horizontal-gutter}) / 3);
     margin-right: 0rem;
+    @include respond-to(tablet) {
+      margin-bottom: 16rem;
+    }
   }
 
   .col-2-of-3 {

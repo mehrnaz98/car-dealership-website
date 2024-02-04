@@ -78,16 +78,30 @@
       position: relative;
       top: -28.9rem;
       right: -0.5rem;
+
+      @include respond-to(tablet) {
+        top: -31.9rem;
+      }
     }
+
     &--2 {
       position: relative;
       top: -30.5rem;
       left: 23rem;
+
+      @include respond-to(tablet) {
+        top: -33.5rem;
+        left: 37rem;
+      }
     }
     &--3 {
       position: relative;
       top: -6.3rem;
       left: 0.5rem;
+
+      @include respond-to(tablet) {
+        top: -8.3rem;
+      }
 
       span {
         font-size: 1.5rem;
@@ -97,6 +111,10 @@
       position: relative;
       top: -8.1rem;
       right: -8rem;
+      @include respond-to(tablet) {
+        top: -10rem;
+        right: -7rem;
+      }
       span {
         font-size: 1.5rem;
       }
@@ -105,6 +123,9 @@
       position: relative;
       top: -10rem;
       right: -17rem;
+      @include respond-to(tablet) {
+        top: -11.6rem;
+      }
     }
   }
 
@@ -143,6 +164,8 @@
         &__content {
           .specificationcardsButton {
             margin-bottom: 1rem;
+            margin-top: 74px;
+            margin-right: 15rem;
           }
         }
       }
