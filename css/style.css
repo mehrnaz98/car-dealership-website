@@ -404,6 +404,11 @@ body {
         top: 44px;
         transform: translate(0, 8%); } }
 
+@media only screen and (max-width: 37.55em) {
+  .specificationcards--deals {
+    font-size: 2.2rem;
+    left: 13%; } }
+
 .row {
   max-width: 114rem;
   margin: 0 auto;
@@ -482,6 +487,9 @@ body {
     margin-top: -4px;
     margin-bottom: 5rem;
     margin-right: 13rem; }
+    @media only screen and (max-width: 37.55em) {
+      .btn-flip__front, .btn-flip__back {
+        margin-left: 7.5rem; } }
   .btn-flip__front {
     background-color: var(--color-red);
     color: var(--color-white);
@@ -502,6 +510,9 @@ body {
     transform: rotate(8deg);
     transform: all 0.5s ease;
     transition-delay: 0.15s; }
+    @media only screen and (max-width: 37.55em) {
+      .btn-flip__back:after {
+        margin-left: 7.5rem; } }
   .btn-flip__link:hover {
     transform: translateZ(-24px) rotateX(-90deg); }
   .btn-flip__link:hover .btn-flip__front {

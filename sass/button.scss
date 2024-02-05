@@ -32,6 +32,10 @@
     margin-top: -4px;
     margin-bottom: 5rem;
     margin-right: 13rem;
+
+    @include respond-to(phone) {
+      margin-left: 7.5rem;
+    }
   }
 
   &__front {
@@ -57,6 +61,9 @@
     transform: rotate(8deg);
     transform: all 0.5s ease;
     transition-delay: 0.15s;
+    @include respond-to(phone) {
+      margin-left: 7.5rem;
+    }
   }
 
   &__link:hover {

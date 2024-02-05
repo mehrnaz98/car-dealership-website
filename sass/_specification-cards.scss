@@ -206,3 +206,12 @@
     }
   }
 }
+
+@include respond-to(phone) {
+  .specificationcards {
+    &--deals {
+      font-size: 2.2rem;
+      left: 13%;
+    }
+  }
+}
