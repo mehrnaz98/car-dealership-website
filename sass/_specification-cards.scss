@@ -82,6 +82,9 @@
       @include respond-to(tablet) {
         top: -31.9rem;
       }
+      @include respond-to(phone) {
+        top: -35.9rem;
+      }
     }
 
     &--2 {
@@ -93,6 +96,10 @@
         top: -33.5rem;
         left: 37rem;
       }
+      @include respond-to(phone) {
+        top: -37.5rem;
+        left: 22rem;
+      }
     }
     &--3 {
       position: relative;
@@ -101,6 +108,9 @@
 
       @include respond-to(tablet) {
         top: -8.3rem;
+      }
+      @include respond-to(phone) {
+        top: -8.9rem;
       }
 
       span {
@@ -115,6 +125,10 @@
         top: -10rem;
         right: -7rem;
       }
+      @include respond-to(phone) {
+        top: -10.6rem;
+        right: -7rem;
+      }
       span {
         font-size: 1.5rem;
       }
@@ -125,6 +139,9 @@
       right: -17rem;
       @include respond-to(tablet) {
         top: -11.6rem;
+      }
+      @include respond-to(phone) {
+        top: -12.5rem;
       }
     }
   }

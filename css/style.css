@@ -311,6 +311,9 @@ body {
       @media only screen and (max-width: 56.25em) {
         .specificationcards__detail--1 {
           top: -31.9rem; } }
+      @media only screen and (max-width: 37.55em) {
+        .specificationcards__detail--1 {
+          top: -35.9rem; } }
     .specificationcards__detail--2 {
       position: relative;
       top: -30.5rem;
@@ -319,6 +322,10 @@ body {
         .specificationcards__detail--2 {
           top: -33.5rem;
           left: 37rem; } }
+      @media only screen and (max-width: 37.55em) {
+        .specificationcards__detail--2 {
+          top: -37.5rem;
+          left: 22rem; } }
     .specificationcards__detail--3 {
       position: relative;
       top: -6.3rem;
@@ -326,6 +333,9 @@ body {
       @media only screen and (max-width: 56.25em) {
         .specificationcards__detail--3 {
           top: -8.3rem; } }
+      @media only screen and (max-width: 37.55em) {
+        .specificationcards__detail--3 {
+          top: -8.9rem; } }
       .specificationcards__detail--3 span {
         font-size: 1.5rem; }
     .specificationcards__detail--4 {
@@ -336,6 +346,10 @@ body {
         .specificationcards__detail--4 {
           top: -10rem;
           right: -7rem; } }
+      @media only screen and (max-width: 37.55em) {
+        .specificationcards__detail--4 {
+          top: -10.6rem;
+          right: -7rem; } }
       .specificationcards__detail--4 span {
         font-size: 1.5rem; }
     .specificationcards__detail--5 {
@@ -345,6 +359,9 @@ body {
       @media only screen and (max-width: 56.25em) {
         .specificationcards__detail--5 {
           top: -11.6rem; } }
+      @media only screen and (max-width: 37.55em) {
+        .specificationcards__detail--5 {
+          top: -12.5rem; } }
   .specificationcards--deals {
     font-size: 2.5rem;
     text-align: left;
