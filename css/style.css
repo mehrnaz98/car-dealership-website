@@ -146,12 +146,18 @@ body {
       .left-side__btn a {
         padding: 1rem 2rem; } }
   @media only screen and (max-width: 37.55em) {
+    .left-side__twoCars img {
+      width: 180px; }
+    .left-side__twoCars--1 {
+      height: 98px; }
     .left-side__about--paragraph {
-      width: 84%; } }
-
-@media only screen and (max-width: 37.55em) and (max-width: 30em) {
-  .left-side__about--paragraph {
-    width: 79%; } }
+      width: 88% !important;
+      text-align: justify; }
+    .left-side__btn a {
+      font-size: 2rem; } }
+  @media only screen and (max-width: 30em) {
+    .left-side__about--paragraph {
+      width: 79%; } }
 
 .right-side {
   display: flex;

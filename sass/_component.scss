@@ -128,16 +128,30 @@
     }
   }
   @include respond-to(phone) {
-    &__about {
-      &--paragraph {
-        width: 84%;
+    &__twoCars {
+      img {
+        width: 180px;
+      }
+      &--1 {
+        height: 98px;
       }
     }
-    @include respond-to(small-phone) {
-      &__about {
-        &--paragraph {
-          width: 79%;
-        }
+    &__about {
+      &--paragraph {
+        width: 88% !important;
+        text-align: justify;
+      }
+    }
+    &__btn {
+      a {
+        font-size: 2rem;
+      }
+    }
+  }
+  @include respond-to(small-phone) {
+    &__about {
+      &--paragraph {
+        width: 79%;
       }
     }
   }
