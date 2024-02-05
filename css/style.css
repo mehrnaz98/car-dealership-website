@@ -163,6 +163,12 @@ body {
   display: flex;
   flex: 1;
   flex-wrap: wrap; }
+  @media only screen and (max-width: 56.25em) {
+    .right-side {
+      border-left: none; } }
+  @media only screen and (max-width: 75em) {
+    .right-side {
+      border-left: none; } }
 
 /*article__content*/
 .article__content {
@@ -241,11 +247,15 @@ body {
     margin-top: -5rem; }
   .left-side__about--paragraph {
     font-size: 2rem; }
-  .article__content__list {
-    font-size: 1.5rem;
-    margin-left: -6px; }
-    .article__content__list--1 {
-      padding-right: 6rem; } }
+  .right-side {
+    border-left: none; }
+  .article__content {
+    padding-bottom: 0rem; }
+    .article__content__list {
+      font-size: 1.5rem;
+      margin-left: -6px; }
+      .article__content__list--1 {
+        padding-right: 6rem; } }
 
 .header {
   display: flex;

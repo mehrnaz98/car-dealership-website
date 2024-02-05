@@ -158,6 +158,12 @@
   display: flex;
   flex: 1;
   flex-wrap: wrap;
+  @include respond-to(tablet) {
+    border-left: none;
+  }
+  @include respond-to(tablet-land) {
+    border-left: none;
+  }
 }
 
 /*article__content*/
@@ -280,8 +286,14 @@
       font-size: 2rem;
     }
   }
+
+  .right-side {
+    border-left: none;
+  }
+
   .article {
     &__content {
+      padding-bottom: 0rem;
       &__list {
         font-size: 1.5rem;
         margin-left: -6px;
