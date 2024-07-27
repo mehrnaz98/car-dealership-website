@@ -4,6 +4,6 @@ Explore this sleek and modern car dealership website, designed with Sass for a p
 
 ## Live Demo
 
-You can view the live version of this project here: [View on Netlify](https://monumental-tartufo-6cc602.netlify.app/)
+You can view the live version of this project here: <a href="https://monumental-tartufo-6cc602.netlify.app/" target="_blank">View on Netlify</a>
 
  
